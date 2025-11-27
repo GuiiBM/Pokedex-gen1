@@ -13,9 +13,10 @@ try {
         throw new Exception("Falha na conexão: " . $conn->connect_error);
     }
     
-    $conn->set_charset("utf8");
+    $conn->set_charset("utf8mb4");
     
 } catch (Exception $e) {
-    die("Erro de conexão: " . $e->getMessage());
+    error_log("Database connection error: " . $e->getMessage());
+    die("Erro de conexão com o banco de dados. Tente novamente mais tarde.");
 }
 ?>
