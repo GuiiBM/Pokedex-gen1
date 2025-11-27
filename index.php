@@ -27,13 +27,19 @@ try {
     <title>Pokédex - Primeira Geração</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://raw.githubusercontent.com">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <meta http-equiv="X-Frame-Options" content="DENY">
     <meta http-equiv="X-XSS-Protection" content="1; mode=block">
 </head>
 <body>
     <header>
-        <h1>Pokédex - Primeira Geração</h1>
+        <div class="header-content">
+            <h1>Pokédex - Primeira Geração</h1>
+        </div>
+        <div class="dice-container">
+            <canvas id="diceCanvas" width="60" height="60" title="Pokémon Aleatório"></canvas>
+        </div>
         <p>Os 151 Pokémons originais</p>
     </header>
 
